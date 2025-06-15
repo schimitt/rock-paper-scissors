@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Pedra, Papel, tesoura</title>
+
+
+
+
+</head>
+<body style="background-color: #1A2749;">
+  <div class="d-flex justify-content-center">
+    <div>
+      <div class="text-light mrt-4 border-full w-40 h-13 d-flex rounded">
+        <img class="w-13 h-10 pt-4 ps-4" src="/images/logo.svg" alt="">
+        <div class="text-center bg-light ms-auto w-12 h-10 mt-4 me-4 roundedd-1">
+          <p class="text-1 fw-bold fs-4">Pontos</p>
+          <input type="number" name="" class="bkg-3 border-0 mtr-3 text-center prt-3 fs-1 w-12 contador" id="contador" readonly>
+        </div>
+      </div>
+      <div id="div-central" class="mrt-5 text-center">
+        <div id="div-central-2" class="d-flex justify-content-center">
+          <div id="div-paper" class="">
+            <div id="v-paper" class="d-none text-light fs-3 ">
+              <p class="">Você escolheu</p>
+            </div>
+            <div id="c-paper" class="d-none text-light fs-3">
+              <p>Oponente escolheu</p>
+            </div>
+            <button id="button-paper" class="bkg-light rounded-circle w-8 h-8 border-full-2"><img src="/images/icon-paper.svg" alt=""></button>
+          </div>
+          <div id="div-scissors" class="mrs-8">
+            <div id="v-scissors" class="d-none text-light fs-3">
+              <p class="">Você escolheu</p>
+            </div>
+            <div id="c-scissors" class="d-none text-light fs-4">
+              <p>Oponente escolheu</p>
+            </div>
+            <button id="button-scissors" class="bkg-light rounded-circle w-8 h-8 border-full-3"><img src="/images/icon-scissors.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="mt-5 d-flex justify-content-center">
+          <div id="div-rock" class="">
+            <div id="v-rock" class="d-none text-light fs-3">
+              <p class="">Você escolheu</p>
+            </div>
+            <div id="c-rock" class="computador d-none text-light fs-3">
+              <p>Oponente escolheu</p>
+            </div>
+            <button id="button-rock" class="bkg-light rounded-circle w-8 h-8 border-full-4"><img src="/images/icon-rock.svg" alt=""></button>
+          </div>
+        </div>
+        <div id="opçao-computador" class="d-none w-12 h-12 bkg-1 rounded-circle"></div>
+        <div id="div-ganhar-perder" class="d-none h-12">
+          <div class="size-5 text-light">
+            <p id="win" class="">Vitória</p>
+            <p id="lose" class="">Derrota</p>
+          </div>
+          <button id="jogar-novo" class="border-0 w-10 h-3 rounded fs-5">Jogar de novo</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
